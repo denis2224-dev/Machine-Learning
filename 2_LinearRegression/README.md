@@ -26,13 +26,12 @@ This is a **foundational ML project**, designed to scale into:
 ## 📁 Project Structure
 
 2_LinearRegression/
-│
-├── main.py # Production-style ML pipeline
-├── mathematical_model.py # Linear regression from scratch
-├── students.csv # Hours studied → Exam score
-├── steps.tex # Mathematical derivation (LaTeX)
-├── steps.pdf # Compiled derivation
-└── README.md
+- main.py # Production-style ML pipeline
+- mathematical_model.py # Linear regression from scratch
+-  students.csv # Hours studied → Exam score
+- steps.tex # Mathematical derivation (LaTeX)
+- steps.pdf # Compiled derivation
+- README.md
 
 ---
 
