@@ -1,0 +1,88 @@
+\documentclass[11pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{geometry}
+\geometry{margin=1in}
+
+\title{Simple Linear Regression — Math Summary}
+\author{}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{1. Model (Hypothesis)}
+\[
+\hat{y}_i = b_0 + b_1 x_i
+\]
+
+\section*{2. Error (Residual)}
+\[
+e_i = y_i - \hat{y}_i
+\]
+
+\section*{3. Cost Function (Mean Squared Error)}
+\[
+J(b_0, b_1) = \frac{1}{n}\sum_{i=1}^{n}
+\left(y_i - (b_0 + b_1 x_i)\right)^2
+\]
+
+\section*{4. Means}
+\[
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n} x_i
+\qquad
+\bar{y} = \frac{1}{n}\sum_{i=1}^{n} y_i
+\]
+
+\section*{5. Variance of $x$}
+\[
+\operatorname{Var}(x) =
+\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})^2
+\]
+
+\section*{6. Covariance of $x$ and $y$}
+\[
+\operatorname{Cov}(x,y) =
+\frac{1}{n}\sum_{i=1}^{n}(x_i - \bar{x})(y_i - \bar{y})
+\]
+
+\section*{7. Optimal Slope}
+\[
+b_1 =
+\frac{\operatorname{Cov}(x,y)}
+{\operatorname{Var}(x)}
+\]
+
+\section*{8. Optimal Intercept}
+\[
+b_0 = \bar{y} - b_1 \bar{x}
+\]
+
+\section*{9. Prediction}
+\[
+\hat{y}_{\text{new}} = b_0 + b_1 x_{\text{new}}
+\]
+
+\section*{10. Feature Scaling (Standardization)}
+\[
+z = \frac{x - \mu}{\sigma}
+\qquad
+\hat{y} = b_0 + b_1 z
+\]
+
+\section*{11. Mean Squared Error}
+\[
+\text{MSE} =
+\frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2
+\]
+
+\section*{12. Coefficient of Determination ($R^2$)}
+\[
+R^2 =
+1 -
+\frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}
+{\sum_{i=1}^{n}(y_i - \bar{y})^2}
+\]
+
+\end{document}
