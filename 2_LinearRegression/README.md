@@ -1,4 +1,4 @@
-# Simple Linear Regression — From Mathematics to Code
+# Simple Linear Regression - From Mathematics to Code
 
 An end-to-end implementation of **Simple Linear Regression**, built both:
 - with a **clean ML pipeline**, and  
