@@ -29,8 +29,7 @@ This is a **foundational ML project**, designed to scale into:
 - main.py # Production-style ML pipeline
 - mathematical_model.py # Linear regression from scratch
 -  students.csv # Hours studied → Exam score
-- steps.tex # Mathematical derivation (LaTeX)
-- steps.pdf # Compiled derivation
+- formulas.pdf # Math Summary
 - README.md
 
 ---
