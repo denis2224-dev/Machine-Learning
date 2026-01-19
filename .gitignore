@@ -12,6 +12,7 @@ venv/
 *.synctex.gz
 *.toc
 *.out
+*.tex
 
 # OS / IDE
 .DS_Store
