@@ -1,6 +1,6 @@
 # Simple Linear Regression - From Mathematics to Code
 
-This module is part of the **Machine-Learning** repository, which documents my structured learning path in machine learning — from **mathematical foundations** to **production-style ML pipelines**.
+This module is part of the **Machine-Learning** repository, which documents my structured learning path in machine learning - from **mathematical foundations** to **production-style ML pipelines**.
 
 This project presents an **end-to-end implementation of Simple Linear Regression**, built in two parallel ways:
 - using a **clean, professional ML workflow** with `scikit-learn`, and
