@@ -3,11 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 def roc_auc_score_binary(y_true, y_score):
-    """
-    ROC AUC computed via rank statistic (Mann–Whitney U).
-    Interpretable as: P(score(pos) > score(neg)).
-    Handles ties by assigning average ranks.
-    """
+
     y_true = np.asarray(y_true).astype(int)
     y_score = np.asarray(y_score, dtype=float)
 
@@ -91,8 +87,6 @@ def train_test_split_stratified(X_df, y, test_size=0.35, random_state=42):
     y_test  = y[test_idx]
     return X_train, X_test, y_train, y_test
 
-# Preprocessing (matches your sklearn pipeline)
-# Gender -> Gender_Male (drop first)
 # Standardize Age, EstimatedSalary using train stats only
 def preprocess_fit_transform(X_train_df): # OneHotEncoder.fit_transform and StandardScaler.fit_transform
     X = X_train_df.copy()
