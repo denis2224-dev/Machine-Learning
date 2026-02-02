@@ -100,14 +100,18 @@ and prepares for:
 ## 📈 Dataset Overview
 
 - **Source:** Social Network Ads dataset  
-- **Samples:** \( n \approx 400 \)  
-- **Numerical Features:**  
-  - Age (\( x_1 \))  
-  - Estimated Salary (\( x_2 \))  
-- **Categorical Feature:**  
-  - Gender (\( x_3 \)) → One-hot encoded (drop-first)  
-- **Target:**  
-  - Purchased (\( y \in \{0,1\} \))
+- **Samples:** approximately 400  
+
+- **Numerical Features:**
+  - Age ($x_1$)
+  - Estimated Salary ($x_2$)
+
+- **Categorical Feature:**
+  - Gender ($x_3$) → One-hot encoded (drop-first)
+
+- **Target:**
+  - Purchased ($y \in \{0,1\}$)
+
 
 ### Modeling Assumptions
 - Binary outcome variable
@@ -166,14 +170,7 @@ $$
 ### Loss Function (Binary Cross-Entropy)
 
 $$
-J(\beta) =
--\frac{1}{n}
-\sum_{i=1}^{n}
-\left[
-y_i \log(\hat{p}_i)
-+
-(1 - y_i)\log(1 - \hat{p}_i)
-\right]
+J(\beta) = -\frac{1}{n} \sum_{i=1}^{n} \left[y_i \log(\hat{p}_i)+(1 - y_i)\log(1 - \hat{p}_i)\right]
 $$
 
 ### Gradient
